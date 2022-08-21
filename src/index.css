@@ -11,7 +11,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   border-bottom: 1px solid #ccc;
 }
@@ -30,7 +30,25 @@
   color: #f1356d;
 }
 .content {
-  max-width: 600px;
+  max-width: 800px;
   margin: 40px auto;
   padding: 20px;
+}
+
+/* countries preview list */
+.country-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.country-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.country-preview h2 {
+  font-size: 1.2rem;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.country-preview a {
+  text-decoration: none;
 }
