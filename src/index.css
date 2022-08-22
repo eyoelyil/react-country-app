@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -7,48 +6,89 @@
   font-family: "Quicksand", sans-serif;
   color: #333;
 }
+
+/* .App {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 50px 50px;
+} */
+
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
   border-bottom: 1px solid #ccc;
 }
+
+.links {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar h1 {
   color: #f1356d;
 }
+
 .navbar .links {
   margin-left: auto;
 }
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
+
 .navbar a:hover {
   color: #f1356d;
 }
-.content {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+
+.country {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
 }
 
-/* countries preview list */
-.country-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+.flag {
+  flex: flex-end;
 }
-.country-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+.countries {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  padding: 0 2px;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 16px 16px 16px;
 }
-.country-preview h2 {
-  font-size: 1.2rem;
-  color: #f1356d;
+
+.searchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 500px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
-.country-preview a {
-  text-decoration: none;
+
+/* .country {
+    
+    margin: 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+} */
+
+.header_logo {
+  flex: flex-start;
 }
